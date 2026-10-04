@@ -11,8 +11,10 @@ __pycache__/
 
 
 #Arquivos
-**data/modelo/Posto-Preço-16/README.dataset.txt
-**data/modelo/Posto-Preço-16/README.roboflow.txt
+README.dataset.txt
+README.roboflow.txt
+**/README.dataset.txt
+**/README.roboflow.txt
 
 #Bloqueia todo o esquema dentro da pasta modelo
 **/modelo/runs/detect
