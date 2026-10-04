@@ -8,7 +8,11 @@ __pycache__/
 **/data/**/*.png
 **/data/**/*.jpeg
 !**/.gitkeep
-/data/Posto-Preço-16
+
+
+#Arquivos
+**/README.dataset.txt
+**/README.roboflow.txt
 
 #Bloqueia todo o esquema dentro da pasta modelo
 **/modelo/runs/detect
