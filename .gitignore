@@ -8,6 +8,7 @@ __pycache__/
 **/data/**/*.png
 **/data/**/*.jpeg
 !**/.gitkeep
+**/data/Posto-Preço-16
 
 #Bloqueia todo o esquema dentro da pasta modelo
 **/modelo/runs/detect
