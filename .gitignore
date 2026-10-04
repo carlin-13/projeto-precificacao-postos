@@ -2,7 +2,7 @@
 __pycache__/
 
 data/fotos_postos/
-data/fotos_postos_clientes/
+data/fotos_postos_cliente/
 data/*.xlsx
 *.csv
 *.yaml
