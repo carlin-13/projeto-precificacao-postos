@@ -14,13 +14,13 @@ Este projeto substitui a digitação manual por um sistema inteligente de detec�
 
 ## 🧠 Arquitetura e Regras de Negócio (Diferenciais)
 
-Este projeto não é apenas um script de IA básico. Foi construído com foco em **confiabilidade de dados e segurança empresarial**, aplicando lógicas rigorosas de tratamento antes de qualquer gravação no banco de dados (Excel).
+Foi construído com foco em **confiabilidade de dados e preenchimento de dados de forma automatizada**, aplicando lógicas de tratamento(limitadores) antes de qualquer gravação no banco de dados (Excel).
 
-*   **Detecção Dupla (YOLOv8 + EasyOCR):** O YOLOv8 localiza espacialmente as coordenadas (Bounding Boxes) dos tipos de combustíveis e das zonas de preços. O modelo foi treinado customizadamente para totens. O EasyOCR entra em seguida apenas nas zonas delimitadas para extrair o valor monetário.
+*   **Detecção Dupla (YOLOv8 + EasyOCR):** O YOLOv8 localiza espacialmente as coordenadas (Bounding Boxes - "caixinhas") dos tipos de combustíveis e das zonas de preços em que o modelo foi treinado customizadamente para totens de preços. O EasyOCR entra em seguida apenas nas zonas delimitadas para extrair o valor monetário já que ele age como um ótimo captador de textos.
 *   **Pareamento Espacial Algorítmico:** Utiliza *Linear Sum Assignment* (`scipy.optimize`) para calcular a distância nos eixos X e Y entre o nome do combustível e o número detectado, garantindo que o preço lido pertence à gasolina correta, e não ao diesel da linha de baixo.
 *   **A "Trava Dupla" (Double Lock Validation):** O sistema só autoriza a gravação se houver um encontro coerente e conciso entre a foto analisada e o cadastro na base de dados, validando o par **Posto + Cidade (Região)**.
-*   **Auditoria de Variação de Preço:** Uma camada de defesa financeira. O sistema consulta o histórico daquele posto no dia anterior, baseado numa prior genérica. Logo, se a IA ler um preço que represente uma variação abrupta (ex: erro de leitura OCR gerando um salto > 5%), a atualização é **bloqueada e rejeitada** para evitar corrupção da base de inteligência.
-*   **LGPD e Confidencialidade:** Para fins de portfólio público, **este repositório foi higienizado**,ou seja, os nomes de clientes reais e bases confidenciais foram substituídas por nomes genéricos e dados anonimizados.
+*   **Auditoria de Variação de Preço:** Uma camada de defesa em que sistema consulta o histórico daquele posto no dia anterior, baseado numa prior genérica. Logo, se a IA ler um preço que represente uma variação abrupta (ex: erro de leitura OCR gerando um salto > 5%), a atualização é **bloqueada e rejeitada** para evitar corrupção da base de inteligência.
+*   **LGPD e Confidencialidade:** Para fins de portfólio público, **este repositório foi higienizado** ,ou seja, os nomes de clientes reais e bases confidenciais foram substituídas por nomes genéricos e dados anonimizados e também foi retirado as fotos utilizadas e como o modelo foi feito.
 
 ---
 
