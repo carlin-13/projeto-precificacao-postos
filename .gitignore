@@ -1,0 +1,11 @@
+.vscode/
+__pycache__/
+
+data/fotos_postos/
+data/fotos_postos_clientes/
+data/*.xlsx
+*.csv
+*.yaml
+
+runs/
+output/
