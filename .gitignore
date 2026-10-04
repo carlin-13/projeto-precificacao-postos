@@ -9,7 +9,7 @@ __pycache__/
 **/data/**/*.jpeg
 !**/.gitkeep
 
-#Bloqueia todo o lixo gerado pelo treino do YOLO
-**/modelo/runs/
+#Bloqueia todo o esquema dentro da pasta modelo
+**/modelo/runs/detect
 **/modelo/sample_data/
 **/modelo/.config/
