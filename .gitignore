@@ -9,8 +9,8 @@ placas/data/**/*.jpeg
 
 placas/scripts/**/*.py
 
-**modelo/runs/detect/train
-**modelo/sample_data
-**modelo/.config
+**/modelo/runs/detect/train
+**/modelo/sample_data
+**/modelo/.config
 *placas/scripts
 
