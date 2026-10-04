@@ -4,7 +4,7 @@ import os
 Base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 #caminho
-caminho_retirada = os.path.join(Base_dir,"data","fotos_postos")
+caminho_retirada = os.path.join(Base_dir,"data","fotos_postos" & "fotos_postos_clientes")
 
 #extensoes que serão removidas
 extensoes_fotos = ('.jpg', '.jpeg', '.png')
