@@ -1,16 +1,15 @@
-.vscode
-__py__cache
+#Editor e Cache
+.vscode/
+__pycache__/
 
-placas/data/**/*.xlsx
-placas/data/**/*.jpg
-placas/data/**/*.png
-placas/data/**/*.jpeg
+#Bloqueia dados sensiveis em qualquer local, mas permite a estrutura
+**/data/**/*.xlsx
+**/data/**/*.jpg
+**/data/**/*.png
+**/data/**/*.jpeg
 !**/.gitkeep
 
-placas/scripts/**/*.py
-
+#Bloqueia todo o lixo gerado pelo treino do YOLO
 **/modelo/runs/
 **/modelo/sample_data/
 **/modelo/.config/
-*placas/scripts
-
