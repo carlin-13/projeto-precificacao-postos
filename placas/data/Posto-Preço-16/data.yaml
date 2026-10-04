@@ -1,0 +1,18 @@
+names:
+- ETANOL
+- GASOLINA AD
+- GASOLINA C
+- S10
+- S500
+- placa
+- preco
+nc: 7
+roboflow:
+  license: CC BY 4.0
+  project: posto-preco
+  url: https://universe.roboflow.com/carlos-canto/posto-preco/dataset/16
+  version: 16
+  workspace: carlos-canto
+test: ../test/images
+train: "/content/Posto-Pre\xE7o-16/train/images"
+val: "/content/Posto-Pre\xE7o-16/valid/images"
