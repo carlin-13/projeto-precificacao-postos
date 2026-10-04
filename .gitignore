@@ -1,11 +1,13 @@
 .vscode/
 __pycache__/
 
-data/fotos_postos/
-data/fotos_postos_cliente/
-data/*.xlsx
-*.csv
-*.yaml
+**/data/fotos_postos/
+**/data/fotos_postos_clientes/
+**/data/Posto Preço 16/
+**/runs/
+**/output/
 
-runs/
-output/
+
+**/*.xlsx
+**/*.csv
+**/*.yaml
