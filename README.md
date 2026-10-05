@@ -6,9 +6,10 @@
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Processing-darkblue.svg)](https://pandas.pydata.org/)
 [![LGPD Compliant](https://img.shields.io/badge/LGPD-Compliant-success.svg)]()
 
-Um pipeline robusto de **Visão Computacional e Engenharia de Dados** desenhado para automatizar a extração de preços de combustíveis a partir de fotografias de totens de postos concorrentes e clientes. 
+Um projeto já aplicado dentro da empresa que trabalho de **Visão Computacional e Engenharia de Dados** desenhado para automatizar a extração de preços de combustíveis a partir de fotografias de totens de postos concorrentes e clientes. 
 
 Este projeto substitui a digitação manual por um sistema inteligente de detecção, auditoria de variação financeira e atualização dinâmica de planilhas de mercado.
+Sendo produzido desde o treinamento das redes neurais convulacionais(CNN´s) dentro de Yolo e EasyOCR(sendo essas com função de ativação Silu e Sigmoide) até a organização das pastas.
 
 ---
 
