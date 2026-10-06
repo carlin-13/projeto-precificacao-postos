@@ -41,7 +41,7 @@ col_posto = 'POSTO_CONCORRENTE'
 col_combustivel = 'COMBUSTÍVEL'
 col_preco_concorrente = 'PRECO_CONCORRENTE' #coluna que vai ser atualizada
 col_data = 'DATA'
-col_preco_cliente = 'PRECO_CLIENTE_ALVO' #coluna utilizada para atualizar o preço do ponteio 
+col_preco_cliente = 'PRECO_CLIENTE_ALVO' #coluna utilizada para atualizar o preço 
 col_posto_cliente = 'POSTOS_CLIENTE'
 col_cidade = "CIDADE"
 
@@ -143,7 +143,7 @@ def transformar_em_preco(texto):
     texto = texto.upper().translate(MAPA_NUMEROS)   #o texto é colocado em maiusculos e traduzindo as letras para numeros
     digitos = re.sub(r"\D", "", texto)  #removendo todos os caracteres que nao sejam numeros
     if len(digitos) not in (3, 4):
-        return None     #se o comprimento for diferente de 3 ou 4, retorna nulo
+        return None     #se o comprimento for diferente de 3 ou 4, retorna nulo, por causa do tamanho do preço na placa. Eexemplo:(R$5,98)
     try:
         valor = int(digitos) / 100  #transformando os numeros em preços e dividindo por 100 para ter um preço real
     except ValueError:
