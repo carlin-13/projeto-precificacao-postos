@@ -34,7 +34,7 @@ Foi construído com foco em **confiabilidade de dados e preenchimento de dados d
 
 ---
 
-## 📁 Estrutura do Projeto (Visualização Pública)
+## 📁 Estrutura do Projeto
 
 ```text
 projeto-precificacao-postos/
